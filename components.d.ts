@@ -9,11 +9,9 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AchoTree: typeof import('./src/components/AchoTree.vue')['default']
     Card: typeof import('./src/components/Card.vue')['default']
-    Counter: typeof import('./src/components/Counter.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Node: typeof import('./src/components/Node.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Tree: typeof import('./src/components/AchoTree.vue')['default']
   }
 }
