@@ -96,16 +96,17 @@ const socialList = ref([
 | userRole | 用户岗位 | _string_ | `-` |
 | wrapClass | 自定义content的class | _string \| Array \| object_ | `-` |
 | headerClass | 自定义头部的class | _string \| Array \| object_ | `-` |
-| contactClass | 自定义中间部分的class | _string \| Array \| object_ | `-` |
+| bodyClass | 自定义中间部分的class | _string \| Array \| object_ | `-` |
 | footerClass | 自定义尾部的class | _string \| Array \| object_ | `-` |
 | contactList | 中间联系方式的列表 | _Array_ | `-` |
 | socialList | 社交模块的列表 | _Array_ | `-` |
-| socialBgColor | 社交模块的背景 | _string_ | `'#68c8a2'` |
-| socialIconColor | 社交模块的icon颜色 | _string_ | `#000` |
+| footerBgColor | 社交模块的背景 | _string_ | `'#68c8a2'` |
+| footerIconColor | 社交模块的icon颜色 | _string_ | `#000` |
 
-### CellGroup Slots
+### Slots
 
 | 名称    | 说明           |
 | ------- | -------------- |
 | default | 默认插槽       |
-| title   | 自定义分组标题 |
+| header   | 头部的插槽 |
+| footer   | 尾部的插槽 |

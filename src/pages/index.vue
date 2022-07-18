@@ -67,12 +67,49 @@ const socialList = ref([
     <AchoTree :tree-data="treeData" />
 
     <div class="card-box">
-      <Card
-        avatar="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02ac8fd2cdb040f5bc7d73b562518d97~tplv-k3u1fbpfcp-watermark.image"
-        user-name="John Doe"
-        user-role="Mobile App Developer"
-        :contact-list="contactList" :social-list="socialList"
-      />
+      <div>
+        <p class="title">
+          基础使用
+        </p>
+        <Card
+          avatar="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02ac8fd2cdb040f5bc7d73b562518d97~tplv-k3u1fbpfcp-watermark.image"
+          user-name="John Doe"
+          user-role="Mobile App Developer"
+          :contact-list="contactList" :social-list="socialList"
+        />
+      </div>
+
+      <div>
+        <p class="title">
+          slot使用
+        </p>
+        <Card>
+          <template #header>
+            <div>
+              我是头部
+            </div>
+          </template>
+          <template #footer>
+            <div>
+              我是尾部
+            </div>
+          </template>
+          <div>我是中间</div>
+        </Card>
+      </div>
+      <div>
+        <p class="title">
+          自定义尾部颜色
+        </p>
+        <Card
+          avatar="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02ac8fd2cdb040f5bc7d73b562518d97~tplv-k3u1fbpfcp-watermark.image"
+          user-name="John Doe"
+          user-role="Mobile App Developer"
+          :contact-list="contactList" :social-list="socialList"
+          footer-bg-color="#f5f5f5"
+          footer-icon-color="#333"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -80,7 +117,13 @@ const socialList = ref([
 <style lang="less">
   .card-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: rgb(109, 205, 137);
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
   }
 </style>

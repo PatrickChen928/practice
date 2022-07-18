@@ -32,7 +32,7 @@ defineProps({
   headerClass: {
     type: [String, Array, Object],
   },
-  contactClass: {
+  bodyClass: {
     type: [String, Array, Object],
   },
   footerClass: {
@@ -44,11 +44,11 @@ defineProps({
   socialList: {
     type: Array as PropType<SocialInfo[]>,
   },
-  socialBgColor: {
+  footerBgColor: {
     type: String,
     default: '#68c8a2',
   },
-  socialIconColor: {
+  footerIconColor: {
     type: String,
     default: '#000',
   },
@@ -73,7 +73,7 @@ defineProps({
           </div>
         </slot>
       </div>
-      <div class="a-card__info" :class="contactClass">
+      <div class="a-card__info" :class="bodyClass">
         <slot>
           <div v-for="item in contactList" :key="item.value" class="a-card__info--item">
             <i class="a-card__info--icon icon-btn" :class="item.icon" />
@@ -90,8 +90,8 @@ defineProps({
       </div>
       <div
         class="a-card__footer" :class="footerClass" :style="{
-          background: socialBgColor,
-          color: socialIconColor,
+          background: footerBgColor,
+          color: footerIconColor,
         }"
       >
         <slot name="footer">
