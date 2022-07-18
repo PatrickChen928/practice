@@ -1,0 +1,60 @@
+// Vitest Snapshot v1
+
+exports[`Card.vue > footer slot should render 1`] = `
+"<div class=\\"a-card__box\\">
+  <div class=\\"a-card__content\\" style=\\"width: 15rem;\\">
+    <div class=\\"a-card__head\\"><img class=\\"a-card__head--img\\" alt=\\"\\">
+      <div class=\\"a-card__head--name\\"></div>
+      <div class=\\"a-card__head--role\\"></div>
+    </div>
+    <div class=\\"a-card__info\\">
+      <div>footer content</div>
+    </div>
+    <div class=\\"a-card__footer\\" style=\\"background: rgb(104, 200, 162); color: rgb(0, 0, 0);\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`Card.vue > header slot should render 1`] = `
+"<div class=\\"a-card__box\\">
+  <div class=\\"a-card__content\\" style=\\"width: 15rem;\\">
+    <div class=\\"a-card__head\\">
+      <div>header content</div>
+    </div>
+    <div class=\\"a-card__info\\"></div>
+    <div class=\\"a-card__footer\\" style=\\"background: rgb(104, 200, 162); color: rgb(0, 0, 0);\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`Card.vue > should render 1`] = `
+"<div class=\\"a-card__box\\">
+  <div class=\\"a-card__content\\" style=\\"width: 15rem;\\">
+    <div class=\\"a-card__head\\"><img class=\\"a-card__head--img\\" src=\\"https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02ac8fd2cdb040f5bc7d73b562518d97~tplv-k3u1fbpfcp-watermark.image\\" alt=\\"\\">
+      <div class=\\"a-card__head--name\\">John Doe</div>
+      <div class=\\"a-card__head--role\\">Mobile App Developer</div>
+    </div>
+    <div class=\\"a-card__info\\">
+      <div class=\\"a-card__info--item\\"><i class=\\"a-card__info--icon icon-btn i-carbon-mobile\\"></i>
+        <div class=\\"a-card__info--right\\">
+          <p class=\\"a-card__info--main\\">5-555-666-777</p>
+          <p class=\\"a-card__info--desc\\">Mobile number</p>
+        </div>
+      </div>
+      <div class=\\"a-card__info--item\\"><i class=\\"a-card__info--icon icon-btn i-carbon-email\\"></i>
+        <div class=\\"a-card__info--right\\">
+          <p class=\\"a-card__info--main\\">example@gmail.com</p>
+          <p class=\\"a-card__info--desc\\">Email address</p>
+        </div>
+      </div>
+      <div class=\\"a-card__info--item\\"><i class=\\"a-card__info--icon icon-btn i-carbon-flight-international\\"></i>
+        <div class=\\"a-card__info--right\\">
+          <p class=\\"a-card__info--main\\">www.example.com</p>
+          <p class=\\"a-card__info--desc\\">Website address</p>
+        </div>
+      </div>
+    </div>
+    <div class=\\"a-card__footer\\" style=\\"background: rgb(104, 200, 162); color: rgb(0, 0, 0);\\"><a href=\\"https://www.facebook.com/\\" class=\\"a-card__footer--item\\"><i class=\\"a-card__footer--icon icon-btn i-carbon-logo-facebook\\"></i></a><a href=\\"https://twitter.com/\\" class=\\"a-card__footer--item\\"><i class=\\"a-card__footer--icon icon-btn i-carbon-logo-twitter\\"></i></a><a href=\\"https://www.instagram.com/\\" class=\\"a-card__footer--item\\"><i class=\\"a-card__footer--icon icon-btn i-carbon-logo-instagram\\"></i></a><a href=\\"https://www.linkedin.com/\\" class=\\"a-card__footer--item\\"><i class=\\"a-card__footer--icon icon-btn i-carbon-logo-linkedin\\"></i></a></div>
+  </div>
+</div>"
+`;
