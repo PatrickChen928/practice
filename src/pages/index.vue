@@ -63,9 +63,17 @@ const socialList = ref([
 
 <template>
   <div>
-    <!-- <textarea v-model="treeDataStr" cols="60" rows="10" /> -->
     <AchoTree :tree-data="treeData" />
 
+    <h1
+      block
+      c-black
+      mt10
+      mb2
+      text="1.6rem"
+    >
+      Card Demo
+    </h1>
     <div class="card-box">
       <div>
         <p class="title">
@@ -114,7 +122,7 @@ const socialList = ref([
   </div>
 </template>
 
-<style lang="less">
+<style scoped lang="less">
   .card-box {
     display: flex;
     justify-content: space-between;
