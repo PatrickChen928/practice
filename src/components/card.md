@@ -81,7 +81,6 @@ const socialList = ref([
   <!-- 默认内容插槽 -->
   <div>我是中间</div>
 </Card>
-</v-cell>
 ```
 
 ## API
